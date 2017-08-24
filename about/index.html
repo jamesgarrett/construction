@@ -1,0 +1,1196 @@
+<html lang="en" class="wf-freightsanspro-n4-active wf-freightsanspro-i4-active wf-freightsanspro-n7-active wf-freightsanspro-i7-active wf-freighttextpro-n4-active wf-freighttextpro-i4-active wf-freighttextpro-n7-active wf-freighttextpro-i7-active wf-active"><head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="James Garrett">
+
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="/vendor/tether/tether.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Custom fonts for this theme -->
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <script src="https://use.typekit.net/jox6knn.js"></script>
+    <style type="text/css">.tk-freight-sans-pro{font-family:"freight-sans-pro",sans-serif;}.tk-freight-text-pro{font-family:"freight-text-pro",serif;}</style><style type="text/css">@font-face{font-family:tk-freight-sans-pro-n4;src:url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-freight-sans-pro-i4;src:url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-freight-sans-pro-n7;src:url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-freight-sans-pro-i7;src:url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-freight-text-pro-n4;src:url(https://use.typekit.net/af/80c235/000000000000000000012059/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/80c235/000000000000000000012059/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/80c235/000000000000000000012059/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-freight-text-pro-i4;src:url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-freight-text-pro-n7;src:url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-freight-text-pro-i7;src:url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Plugin CSS -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Mixitup Javascript -->
+    <script src="/node_modules/mixitup/dist/mixitup.min.js"></script>
+
+    <link href="/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Swiper CSS -->
+    <link href="/node_modules/swiper/dist/css/swiper.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this theme -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style><style type="text/css">@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/d7376e/000000000000000000010b5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6b3f8b/000000000000000000010b5b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/0f2acf/000000000000000000010b60/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/9efd2f/000000000000000000010b61/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:freight-text-pro;src:url(https://use.typekit.net/af/80c235/000000000000000000012059/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/80c235/000000000000000000012059/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/80c235/000000000000000000012059/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:freight-text-pro;src:url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/98ad26/00000000000000000001205a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:freight-text-pro;src:url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f18692/00000000000000000001205b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:freight-text-pro;src:url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/88cdbe/00000000000000000001205c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style>
+</head>
+
+<body id="page-top">
+
+
+
+  <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse navbar-expanded" id="mainNav">
+        <div class="container" style="display:flex;">
+            <a class="navbar-brand page-scroll img-fluid" href="/">
+              <img src="https://cosmicjs.com/uploads/1110fe00-874c-11e7-8b86-7db4f533bdd3-Full-Text-Logo.svg" alt="Sloma">
+            </a>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarResponsive">
+                <ul class="navbar-nav">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="/about">About</a><i class="fa arrow-down dropdown-toggle mx-auto my-auto" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="/about">Welcome</a>
+                          <a class="dropdown-item" href="/about#mission">Mission</a>
+                          <a class="dropdown-item" href="/about#team">Team</a>
+                          <a class="dropdown-item" href="/about#accomplishments">Accomplishments</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="/listings">Our Properties</a><i class="fa arrow-down dropdown-toggle mx-auto my-auto" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="/listings#featured">Featured Listings</a>
+                          <a class="dropdown-item" href="/listings#coming-soon">Coming Soon</a>
+                          <a class="dropdown-item" href="/listings#sold">Sold</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/explore">Explore</a><i class="fa arrow-down dropdown-toggle mx-auto my-auto" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="/explore#home-search">Home Search</a>
+                          <a class="dropdown-item" href="/explore#map-search">Map Search</a>
+                          <a class="dropdown-item" href="/explore#estimate">What's Your Home Worth?</a>
+                          <a class="dropdown-item" href="/explore#open-houses">Open Houses</a>
+                          <a class="dropdown-item" href="/explore#subscribe">Subscribe</a>
+                        </div>
+                      </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-label="Toggle navigation">
+                <span class="hidden-xs-down">Menu</span>
+                <svg class="menu-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10">
+                  <rect class="top" x="0" y="1" width="12" height="2"></rect>
+                  <rect class="middle" x="0" y="5" width="12" height="2"></rect>
+                  <rect class="bottom" x="0" y="9" width="12" height="2"></rect>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- <style>ul.navbar-nav{display:none!important;}</style> -->
+	
+	<div class="bg-image" style="background-image:url('https://cosmicjs.imgix.net/32fc2550-72d7-11e7-97c8-8be40d4fcd7a-iStock-467881191.jpg?auto=format,enhance&amp;q=60');"></div>
+    <header class="h-100" style="background:rgba(0,0,0,0.6);">
+    	<!--  -->
+        <div class="overlay"></div>
+	        <div class="container h-100">
+				<div class="row h-100">
+	                <div class="col-12 my-auto text-white text-center page-title">
+                        <h1><img src="https://cosmicjs.imgix.net/df6246a0-721c-11e7-b04a-c3045c0b8963-Asset 7keyhole-white.svg" alt="Keyhole" width="25">About</h1>
+                        <h4>Get to know the Sloma Real Estate Group</h4>
+                        <hr>
+	                </div>
+	            </div>
+			</div>
+		
+	</header>
+
+<main>
+
+    <!-- Mission Section -->
+    <section class="page-section bg-faded" id="mission" style="padding:0;">
+        <div class="container-fluid text-center wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <div class="row">
+                <div class="item col-lg-6 col-sm-12  hidden-md-down text-center" style="width:100%;list-style-type:none;padding:0px;">
+                    <li style="background-image:url('https://cosmicjs.imgix.net/628a10e0-8748-11e7-be7e-afaf08cbe451-mission-photo.jpg');background-size: cover;background-position: 100% 100%;background-repeat: no-repeat;height: 100vh;width: 100%;display: block;"></li>
+                </div>
+                <div class="item col-xl-4 col-lg-6 col-md-6 col-sm-12 mission my-auto mx-auto" style="padding:5rem 10px;">
+                    <h2 class="mb-3">Our Mission</h2>
+                    <hr class="dark">
+                    <p class="mb-0" style="border:1px solid #222;padding:2.5rem; text-align:justify;">At Sloma Real Estate Group, we believe in delivering an individually-tailored and uncompromisingly thorough experience that is memorable for all of the right reasons. Whether you’re in the market for a new home or looking to sell your current one, we take pride in providing an unmatched service that seamlessly integrates the extensive resources of the Jameson Sotheby’s brand with the accessibly-refined elegance and unparalleled dedication of our knowledgeable team. At Sloma Real Estate Group, we prioritize simplicity and professionalism, and work relentlessly to ensure that each of our clients’ have their expectations not only met, but exceeded.</p>
+                    <hr class="dark">
+                    <div class="text-center">
+                        <img src="https://cosmicjs.imgix.net/563cbf40-7302-11e7-9d30-390d1e041bdd-logo-black.svg" width="50" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Team Section -->
+    <section class="page-section bg-default" id="team">
+        <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
+        	<h2 class="text-center">Our Team</h2>
+			<hr class="colored mb-5">
+
+                <div class="row brag">
+
+                    <span class="anchor" id="izabela-sloma"></span>
+                    <!-- Team Carousel Item 1 -->
+                    <div class="item col-lg-6 col-sm-12 text-center" style="clear:both;display:flex;flex-direction:column;">
+
+                            <div class="team-caption">
+                                <h3>Izabela Sloma</h3>
+                                <p class="job-title">VP of Sales</p>
+                            </div>
+
+                    		<div class="img mx-auto mb-5" style="width:400px;height:600px;background-position:center;background-image:url('https://cosmicjs.imgix.net/75cd06b0-7151-11e7-b077-6f07ed59bce1-Izabela headshot.JPG?w=800&amp;fit=crop&amp;crop=entropy&amp;auto=format,enhance');background-size:cover;"></div>
+
+                        <ul class="list-inline list-team-social">
+                            <li class="list-inline-item col-md-12 mb-2"><a href="tel:773-317-0414"><i class="fa fa-phone fa-fw"></i>773-317-0414</a></li>
+                            <li class="list-inline-item col-md-12 mb-2"><a href="mailto:imsloma@gmail.com"><i class="fa fa-envelope fa-fw"></i>imsloma@gmail.com</a></li>
+                            <li class="list-inline-item col-md-12 mb-2"><a href="http://twitter.com/slomarealestate"><i class="fa fa-twitter fa-fw"></i>/slomarealestate</a></li>
+                            <li class="list-inline-item col-md-12 mb-2"><a href="http://linkedin.com/in/izabelasloma"><i class="fa fa-linkedin fa-fw"></i>/izabelasloma</a>
+                            </li>
+                            <li class="list-inline-item col-md-12 mb-2"><a href="http://instagram.com/slomarealestate"><i class="fa fa-instagram fa-fw"></i>/slomarealestate</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="item col-lg-6 col-sm-12">
+
+                    		<p>While most real estate professionals are purveyors of the American Dream, Izabela Sloma stands as its physical embodiment. Over the course of her 10 years working in Chicago’s luxury real estate market, Izabela has established herself as the city’s premier provider of a comprehensive and elegantly refined home buying or selling experience. She has been marked as a Top Residential Producer by the Chicago Association of Realtors every year since 2010, and has accumulated over $200 million in total sales volume since 2007, placing her firmly in the Top 1% of all Chicagoland agents. Yet it is not the constant redefining of market standards that separates Izabela from her industry peers, but rather the unmatched dedication and client-first philosophy with which she approaches each and every transaction.&nbsp;</p><p>Izabela’s ascension to Senior VP, Sales at Jameson Sotheby’s International Real Estate was anything but traditional, having followed a path to success that would make Horatio Alger proud. Her story began, as many of the best do, at the fateful intersection of opportunity and initiative. After tiring of making just enough to pay the bills while working multiple odd jobs – from cleaning houses (not unlike the ones she now sells) to tending bar – Izabela convinced her then car insurance agent that she was the right fit for an entry-level position at State Farm. Her unmatched work-ethic and desire to succeed quickly payed dividends, as she leveraged the experience amassed during her rapid climb up the State Farm ranks to secure a mortgage broker métier. As a broker, however, she was frequently exposed to the frustrations many had experienced while searching for their new home; time after time, her clients seemed overtly stressed by a process that Izabela believed should be satisfying and celebratory. And despite the uncertainty of the market in the wake of the 2007 financial collapse, Izabela set out to manifest that belief into a reality.&nbsp;</p><p><br></p><p>Izabela entered the Chicago real estate market with a fresh perspective that allowed her to immediately challenge the market’s pervasive “that’s just how things are done" attitude. Before the market crash, bottom-line figures had always defined success, but Izabela’s prioritization of client satisfaction and cultivation of relationships predicated on trust and transparency quickly proved that the road less travelled oft leads to triumph. Izabela’s methodology undoubtedly confronted the <em>status quo</em>, but through the utilization of her fluency in Polish and commitment to a people-first philosophy, she had soon developed a system of vertical integration comprised of a large network of builders, developers, and rehabbers that gave her a competitive advantage in what had become a volatile market.&nbsp;</p><p>Her success continued to build as a product of hard work and the cultivation of genuinely symbiotic relationships, leading the name “Izabela Sloma” to become synonymous with client satisfaction and elegantly-accessible luxury.&nbsp;</p><p><br></p><p>Now certified by the Chicago Association of Realtors as a Negotiation Expert, Izabela provides her clients with a level of dedication and seamless home buying or selling experiences that are unmatched in the Second City. Now more than ever, Izabela’s business philosophy is characterized by a passion for helping others realize their dreams; “I love my job,” she says with a smile, “lot’s of people seem to think closing a deal is the best part, but they’re wrong. Nothing is better – more rewarding – than moving day, then helping someone begin their life in the home they’ve been dreaming of.” For Izabela, “people first” is not simply a catchy slogan, but rather an outlook that foundationally defines her everyday approach to life.&nbsp;</p><p><br></p><p>Izabela currently resides in the West Loop, a neighborhood she was initially drawn to for its “diversely relaxed” atmosphere, with her self-described “four- legged baby” – a Doberman Pinscher named Max. When not brokering deals and helping rehabbers, she enjoys trying out Chicago’s many restaurants and connecting with the greater- Chicago community through her support for the Chicago Children’s Choir and the pediatric cancer foundation, Bear Necessities.&nbsp;</p>
+                        
+                    </div>
+
+                </div>
+
+                <hr class="colored" style="clear:both;margin:5rem auto;">
+
+                <div class="row brag">
+
+                    <span class="anchor" id="kate-penkova"></span>
+                    <!-- Team Carousel Item 1 -->
+                    <div class="item col-lg-6 col-sm-12 text-center" style="clear:both;display:flex;flex-direction:column;">
+
+                            <div class="team-caption">
+                                <h3>Kate Penkova</h3>
+                                <p class="job-title">Associate Broker</p>
+                            </div>
+
+                    		<div class="img mx-auto mb-5" style="width:400px;height:600px;background-position:center;background-image:url('https://cosmicjs.imgix.net/315a6a80-7d0f-11e7-a003-f3ccaa646682-Kate2.jpg?w=800&amp;fit=crop&amp;crop=entropy&amp;auto=format,enhance');background-size:cover;"></div>
+
+                        <ul class="list-inline list-team-social">
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+
+                    </div>
+                    <div class="item col-lg-6 col-sm-12">
+
+                    		<p>Defined by her strong work ethic and goal-oriented attitude, Kate Penkova adds yet another dimension to Sloma Real Estate Group’s ability to provide every client with an unforgettable experience. Having initially been enticed by the dynamism inherent to the field, Kate began her real estate career in 2009, and has relished every opportunity to explore novel locations and engage with new people since beginning to work alongside Izabela in 2013. Like the rest of the SREG team, Kate exemplifies a genuine “people-first” philosophy, and approaches every transaction with an unwavering determination to provide the best service possible. The bilingual, Petrich, Bulgaria native takes pride in being described by previous clients as “efficient,” “organized,” and “trustworthy,” and derives an ardent passion for her work from the excitement that every opportunity to find her clients the home of their dreams provides. &nbsp;</p><p><br></p><p>Kate loves riding her bike around the beautiful city of Chicago, and enjoys spending her time outside of work volunteering at local pet shelters or at lounging on the beach with a good book in hand. When asked what she would not be able to live without, Kate responded without hesitation, “my pets, pictures, and some items from my childhood.” She currently resides in Lincoln Square.&nbsp;</p>
+                        
+                    </div>
+
+                </div>
+
+                <hr class="colored" style="clear:both;margin:5rem auto;">
+
+                <div class="row brag">
+
+                    <span class="anchor" id="molly-moran"></span>
+                    <!-- Team Carousel Item 1 -->
+                    <div class="item col-lg-6 col-sm-12 text-center" style="clear:both;display:flex;flex-direction:column;">
+
+                            <div class="team-caption">
+                                <h3>Molly Moran</h3>
+                                <p class="job-title">Marketing Coordinator</p>
+                            </div>
+
+                    		<div class="img mx-auto mb-5" style="width:400px;height:600px;background-position:center;background-image:url('https://cosmicjs.imgix.net/ce8caec0-7153-11e7-a00f-61795441fec4-_DSC1107.JPG?w=800&amp;fit=crop&amp;crop=entropy&amp;auto=format,enhance');background-size:cover;"></div>
+
+                        <ul class="list-inline list-team-social">
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+
+                    </div>
+                    <div class="item col-lg-6 col-sm-12">
+
+                    		<p>Molly Moran brings a uniquely creative perspective and her eye for design to the position of Marketing Coordinator for Sloma Real Estate Group. Born and raised in the small picturesque town of Monson, MA, Molly translated her intrinsic leadership skills and love for competition into a Division 1 soccer scholarship at Fairfield University, where she graduated Cum Laude with a major in Marketing, minor in Business Management, and concentration in Integrated Marketing Communications. Although she stands as the youngest member of the SREG team, Molly brings an impressively comprehensive marketing background and west coast-inspired contemporary flair to the Chicago luxury market. Quite fittingly, Molly discovered her passion for real estate while interning at Pacific Sotheby’s International Realty in San Diego, CA, where she realized that it was the perfect intersection of her background in marketing and love for interior design. Coupled with her innate organizational skills and unrivaled attention to detail, Molly’s soccer-instilled collaborative attitude and indefatigable work-ethic make her the logistical maestro behind SREG’s success.&nbsp;</p><p><br></p><p>Outside of work, Molly is defined by her indescribable love for animals, which was fostered while growing up in a household full of puppies. Before moving to Chicagoland, Molly worked as a foster and volunteer for Little Black Dog Rescue, and has worked extensively in raising awareness about &amp; caring for animals in need. She currently resides in Lakeview with her boyfriend and two cats, Ender and Gryffin.&nbsp;</p>
+                        
+                    </div>
+
+                </div>
+
+                <hr class="colored" style="clear:both;margin:5rem auto;">
+
+                <div class="row brag">
+
+                    <span class="anchor" id="debi-torres"></span>
+                    <!-- Team Carousel Item 1 -->
+                    <div class="item col-lg-6 col-sm-12 text-center" style="clear:both;display:flex;flex-direction:column;">
+
+                            <div class="team-caption">
+                                <h3>Debi Torres</h3>
+                                <p class="job-title">Transactions Coordinator</p>
+                            </div>
+
+                    		<div class="img mx-auto mb-5" style="width:400px;height:600px;background-position:center;background-image:url('https://cosmicjs.imgix.net/86fe6fb0-7155-11e7-b077-6f07ed59bce1-Debi_Torres_.jpg?w=800&amp;fit=crop&amp;crop=entropy&amp;auto=format,enhance');background-size:cover;"></div>
+
+                        <ul class="list-inline list-team-social">
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+
+                    </div>
+                    <div class="item col-lg-6 col-sm-12">
+
+                    		<p>Chicago-born and Elmhurst raised, Debi Torres first developed a love for real estate while watching her grandmother, who immigrated from Mexico and flipped homes before it became fashionable. Prior to joining the Jameson Sotheby’s and the Sloma Real Estate Group as Transactions Coordinator, Debi distinguished herself as a recipient of both William Ryan Homes’ and Draper &amp; Kramer’s Excellence in Customer Service Awards, and brings over 12 years of real estate oriented experience to the SREG family. Licensed as a Real Estate Broker, Debi has been an active member of National Association of Hispanic Real Estate Professionals since 2015, and currently resides in Bensenville with her son and cat, where she enjoys cooking, gardening, and biking Illinois’ famous Prairie Path.</p>
+                        
+                    </div>
+
+                </div>
+
+                <hr class="colored" style="clear:both;margin:5rem auto;">
+
+              <hr>
+			<hr class="dark mt-5" style="max-width:100%;clear:both;">
+    
+
+            <div class="row">
+                <div class="text-center col-md-4 col-sm-12"><img src="https://cosmicjs.imgix.net/01fccda0-7229-11e7-b1b2-15ea3156c75f-Screen Shot 2017-07-26 at 1.34.41 PM.png?w=250" alt=""></div>
+                <div class="text-center col-md-4 col-sm-12"><img src="https://cosmicjs.imgix.net/50a9e7e0-7228-11e7-854a-4d03bb45b69e-TopProducer_2015logo_LRG.jpg?w=250" alt=""></div>
+                <div class="text-center col-md-4 col-sm-12"><img src="https://cosmicjs.imgix.net/e0ea4fc0-7228-11e7-854a-4d03bb45b69e-Screen Shot 2017-07-26 at 1.34.48 PM.png?w=250" alt=""></div>
+            </div>
+
+    </div></section>
+
+    <section class="page-section text-white" id="mission" style="background-color:rgba(0,0,0,0.8);">
+        <div class="container text-center wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <p class="mb-0 quote mx-auto"><em>"Whatever the mind of man can concieve and believe, it can achieve."</em><br>- Napoleon Hill</p>
+            <hr>
+        </div>
+    </section>
+
+	<!-- Accomplishments Section -->
+    <section class="page-section bg-default " id="accomplishments">
+        <div class="container text-center wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <h2>Our Accomplishments</h2>
+            <hr class="dark">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="announcement">
+                        <h3>Statistics and Awards</h3>
+                        <p>Since 2007, Izabela Sloma has over 400 transactions for a total sales volume of $200 million. Izabela has been consistently been a Top Producer in the Chicago Association of Realtors, earning Silver Status for 2016, 2015 and 2013.</p>
+                    </div>
+                    <hr class="dark">
+                    <div class="announcement">
+                        <p class="text-center job-title sans">OVER</p>
+                        <h3 class="text-center serif">30 Million</h3>            
+                        <p class="text-center job-title sans">IN TOTAL SALES</p>
+                        <h1 class="text-center serif">in 2016</h1>
+                    </div>
+                    <hr class="dark">
+                    <div class="announcement">
+                        <img class="text-center mb-5" src="https://cosmicjs.imgix.net/b0369400-730f-11e7-9726-e5d0187ce0bc-jamesonsothebys-black.png?=w350" width="350" alt="">
+                        <h3 class="mb-5">Accomplishments</h3>
+                        <p class="text-center sans alt">Top Producer | Unit | Sales</p>
+                        <p class="text-center serif alt">2016, 2015, 2014</p>
+                        <p class="text-center sans alt">Silver Recognition</p>
+                        <p class="text-center serif alt">2013, 2015, 2016</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="announcement">
+                        <h3>How Izabela Performs vs. the Rest of the Industry</h3>
+                        <img src="https://cosmicjs.com/uploads/4ebf8ac0-722d-11e7-b04a-c3045c0b8963-Screen Shot 2017-07-26 at 2.05.39 PM.png" alt="" class="img-fluid">
+                    </div>
+                    <hr class="dark">
+                    <div class="announcement">
+                        <img class="w-250 mb-5" src="https://cosmicjs.imgix.net/50a9e7e0-7228-11e7-854a-4d03bb45b69e-TopProducer_2015logo_LRG.jpg" width="250" alt="">
+                        <h3 class="mb-5">outstanding sales achievement awards top residential producer</h3>
+                        <ul class="list-inline">
+                            <li class="inline-list-item stat-table">2016 Sales Volume $23-39.9 Million</li>
+                            <li class="inline-list-item stat-table">2015 Sales Volume $26-39.9. Million</li>
+                            <li class="inline-list-item stat-table">2014 Sales Volume $19+ Million</li>
+                            <li class="inline-list-item stat-table">2013 Sales Volume $26-39.9. Million</li>
+                            <li class="inline-list-item stat-table">2012 Sales Volume $15-20 Million</li>
+                            <li class="inline-list-item stat-table">2011 Sales Volume $12-16 Million</li>
+                            <li class="inline-list-item stat-table">2010 Sales Volume $7+ Million</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+			<hr class="dark">
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+   <!-- Testimonials Section -->
+    <section class="page-section testimonials bg-inverse text-white" id="testimonials">
+        <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <h2>Testimonials</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="testimonials-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+
+                        <!-- Testimonial Item 1 -->
+                        <div class="owl-wrapper-outer autoHeight" style="height: 408px;"><div class="owl-wrapper" style="width: 67760px; left: 0px; display: block;"><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Streamwood | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>When I first met Izabela I had a small budget, yet she was more than happy to work with me. I ended up deciding that I needed to rent awhile so I could save up money in order to afford the home I was wanting. After about a year I contacted her again. She is extremely knowledgeable and great at what &nbsp;she does. She never makes you feel pressured and is 100% honest through the whole process. Izabela really cares about her clients and will help you in any way she can. Izabela helped me buy my first home with ease. I would definately use her again without thinking twice.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Galewood | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela has all the qualities someone who is serious about home-buying could want. From the onset, I was impressed by her responsiveness and knowledge on just about everything we encountered along the way. She returned my calls quickly and stayed on top of everything. She was able to differentiate <span id="yui_3_18_1_1_1503415724993_4277">&nbsp;between tasks that needed attention immediately, and tasks that were important but slightly less urgent--and Izabela clearly understood the difference. When I expressed a serious interest in a property, she was exceptional in arranging showings as quickly as reasonably possible. During showings, Izabela was a tremendous advocate for my wife and I. When a property featured something uniquely beneficial to us, she would point it out. When other properties indicated potential red flags, she would explain the risks in easy-to-understand terms. Over the weeks my wife and I had the pleasure of working with her, we were always greeted with a smile and a pleasant, professional demeanor.<br><br>During the process, we had no doubts that we had made an excellent choice for our realtor. Most importantly, Izabela made my wife and I feel that our search for the right house was as important to her as it was to us.<br><br>I am so convinced of her talents, I would not hesitate to recommend Izabela Sloma to my closest friends and relatives, let alone anyone else looking for a great agent</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Rental |  | </p>
+                            <hr class="colored">
+                            <p></p><p>Great to do business with! &nbsp;Izabela is truly a Class A Realtor who doesn't waste you time and knows what she is doing.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase and Sale |  | </p>
+                            <hr class="colored">
+                            <p></p><p>To be honest with everyone my wife is really jealous of Izabela because second to my wife Izabela is the most importent person in my life.I am a developer and she has been selling my properties since the begining and she is the best agent there is! I wouldn't trade her in for anyone, she is the &nbsp;most hard working individual you will ever meet, she makes sure all my deals are perfectely executed and works beyond what she should be doing, always making sure everyone is happy. She is the true definition of a real profesional agent that's not only there for you during the deal but long time after. I would recomend Izabela to everyone. She a real experienced agent with her head on her shoulders that would always do anything to make everyone happy. There is no one like Izabela Sloma.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Iza is a very hard working, “on top of things” realtor. &nbsp;She follows up and follows thru with other agents, comments, negotiations. She pointed out ides what could help sell our house faster. &nbsp;She is dependable, all the way to the closing.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Hermosa | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela Sloma was by far the best Realtor you could have in Chicago. We were looking into purchasing a home but were only wanting to look at what was out there on the internet at first to ease us into the whole process and Izabela was more than understanding and willing to &nbsp;help email us listings. Unlike most Realtors she wasn't calling us everyday pressuring us to start looking, which we truly did appreciate. When we were ready we let her know and the search quickly began with us seeing over 50 plus homes most we choosen to see and some that she wanted us to see as well. Since we were first-time home buyers she gave us her opinion when we asked and she pointed things out things that were wrong or could possibly cost us money to repair. &nbsp;She was persistant and followed up quickly with all of our offers and explained everything that was going on step by step. When our offer was accepted she was on point with everything and was available to us at all times throughout the entire closing process. &nbsp;Izabela was AWESOME &nbsp;and wennt above and beyond for us and I would recommend her to anyone looking to purchase a home anywhere. I am willing to answer any questions, just ask.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Rental |  | </p>
+                            <hr class="colored">
+                            <p></p><p>Iza is the definitely the most responsive and professional real estate agent I have ever worked with. She is very knowledgeable and works on getting best value for your money. I highly recommend her service to anyone.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela Sloma is by far, one of the best real estate agents I have ever dealt with, and trust me, I've dealt with a lot of agents. Izabela does not waste your time, and shows you the exact type of homes that you are looking for. Also, she is on top of everything, and is very attentive to all your &nbsp;home-buying needs. Another thing that struck me about Izabela, which I did not see in other agents, is that she really cares about making sure the property u are interested in is really a good property and has no major issues. Izabela really made me feel comfortable and at the end of our home buying experience, I felt like she was apart of our family. She is really an awesome person as well as a great experienced Real Estate agent. I guarantee, you will not be dissapointed if u choose her to be your agent.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is an extremely knowledgeable and sharp agent. &nbsp;I've been through three other agents in my life, and I have not met one as relentless as her. &nbsp;She carefully listened to my preferences and only showed me properties that would appeal to my personal needs and my style. &nbsp;I never felt like she <span id="yui_3_18_1_1_1503415724993_4188">&nbsp;showed me a house that was a far stretch from my needs. &nbsp;At one point, my needs changed, and she was on board to help me search for a different type of home completely. <br><br>Also, I had an extremely uncertain fate with the mortagage process as two banks had recently denied me; despite these setbacks and what looked to be like a forboding case, Izabela still stuck with me until the end and never lost faith in my ability to procure a home. &nbsp;<br><br>Izabela is an agent who will call her client as soon as she knows something because she is a firm believer of constant and accurate communication. Even more, she works intermittently with the mortgage broker and makes sure he/she is moving as expeditiously as possible. &nbsp;I happened to be out of town when buying a home in Chicago, and she willfully gave up her time to work with me through phone, email, and fax. Izabela is the person whose business hours go beyond the typical 8-5 workday; her day ends well beyond that time--when she feels she has met her client's case's needs for that day. <br><br>Lastly, another great perk about Izabela is that she is highly respected in this industry and is connected to a lot of other professionals who are the best in their respective field as well. &nbsp;The mortgage broker she recommended to me actually got me my home loan after three prior failed attempts with others. Izabela created a team of home buying professionals that helped me achieve what many said I wouldn't be able to achieve, especially in today's highly scrutizing home loan market.<br><br>I firmly believe Izabela Sloma is one of the city's best real estate agents. &nbsp;She is also charming and personable, while being highly professional at the same time. &nbsp;I am an extremely fastidious person, so am 100% earnest when I say to you that I strongly believe it would be in your best interest to work with Izabela Sloma.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Albany Park | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>My husband and I contacted Izabela Sloma because we wanted to work with a knowledgeable and well-respected real estate agent, who we knew would manage our expectations in looking for a single family home in Chicago. Izabela helped us find a property we'd envisioned all along, and she led us through <span id="yui_3_18_1_1_1503415724993_4182">&nbsp;the process seamlessly. We have recommended her to numerous friends and will continue to do. You would be lucky to work with such a talented and hard working person.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Rogers Park | Townhouse</p>
+                            <hr class="colored">
+                            <p></p><p>When Izabela was referred to us we were excited because we heard that she really works hard for her clients. &nbsp;We really didn't understand what that really meant till we met and began viewing home with her. &nbsp;She found listing after listing that would fit into the budget we were looking for. &nbsp;She &nbsp;spent countless times meeting us at all times of the day to view new listing, etc. &nbsp;Her knowledge of the locations in which we viewed was great. &nbsp;Izabela did a great job for us and we know she will do the same for you!</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Irving Park | Townhouse</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_4110">Izabela came as a recommendation from a family member! Upon working with her, she was incredibly patient through our 6-month home-search process. Each and every deal we discussed and submitted through Izabela was handled with priority and care. <br><br>Izabela knows the market very well and she</span> <span id="yui_3_18_1_1_1503415724993_4112">&nbsp;is honest about each and every place you look at it. If she sees a problem, she calls it out. If she doesn't think the unit is priced correctly, she says it. We felt that every place she looked at, she was moving into with us, that's how honest she was about places. <br><br>Izabela also was very amazing at the negotiation process. In fact, at our closing, we were issued money back, which was a huge relief! <br><br>Although, she had clients spending much more money than we did, we never felt like less of a priority to her. She was amazing to work with! <br><br>Our only gripe is that she didn't always follow up to emails promptly. However, she did ALWAYS answer our calls and get back to us with answers. But I'm the kind of person who wants an email saying your working on it so I know you received my email. <br><br>Overall, we highly recommend Izabela.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was our first choice. We had a previous realtor that my wife and I had used before but she had passed away. We meet Izabela at an open house and she made us feel real comfortable and was very knowledgable about the home she was selling. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><p>Izabela was very patient and knowledgable when it <span id="yui_3_18_1_1_1503415724993_4102">&nbsp;came to the areas we wanted to purchase a home in. She also knew what things to look for as far as smelling mold or previous water damage. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p><span>&nbsp;Izabela was great at negotiating. We ended up with a great price and barely had to pay an closing cost. We also had a home warranty included. She also supplied us with some great refferrals. We still use our loan officer when it comes to refinancing. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p><span>My wife and I are very happy living in the home Izabela helpped us find. Thank you, Izabela.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase |  | </p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was very knowledgable and personable. She advocates for her clients and looks out for their best interests. She was very pleasant and quick to respond to any questions.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Irving Park | Townhouse</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was amazing! She went to visit properties with us whenever WE had time. She took the time to explain each step of the buying process which was crucial since we were first time home buyers. I would absolutely recommend Izabela to a new home buyer.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase |  | </p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was very helpful and she helped me buy my first property. Since it was my first time going through the process of buying my first place, I'm so glad she was my realtor. She's easy to reach when you have any type of question and made the home buying process easy. I highly recommend her as &nbsp;your realtor.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Bucktown | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is great. She helped me buy my first place last year and I know I would have been so much more stressed had it not been for Izablea. She has the perfect combination of real estate knowledge and saavy, and is always available at a moment's notice</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Bucktown | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_4026">Izabela went out of her way to accommodate all of our needs. She was very informative and immediately got back to us if we had any questions during the buying process. When we had an issue with the house we purchased, she answered our call on a Sunday and made sure the problem was fixed that day.</span> <span>I would definitely recommend Izabela to anyone who is in the market to buy a house.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Margate Park | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is more than accommodating. &nbsp;Seeing a property without her is a waste of time because she comes with a lot of knowledge. &nbsp;She is not afraid to represent clients and ask tough questions. &nbsp;She does the footwork and is true to the heart of your interests.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Lincoln Park | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_4006">I first met Izabela when my husband and I were house-hunting a few years ago. She represented several of the properties we looked at and was the seller's agent for the home we eventually purchased. We ended up using her to sell the same home and for the purchase of our next home.</span></p><p><span>It's rare</span>&nbsp; to call your seller's agent after a home-buying experience, but I knew I wanted to use Izabela the next time around. During our initial dealings with her from "the other side," I couldn't help but notice her poise and confidence without being aggressive. She came across as honest but street smart at the same time.</p><p>I called her a year ago when we were thinking of eventually selling our home and buying a luxury home because we were so impressed with her professionalism, intelligence and her connections to both prospective buyers for our home and to the home building community. I also trusted she had a very good knowledge of the luxury home market in which we were looking, and she did not disappoint.</p><p>Izabela met with me to ascertain what we wanted in our next home and house hunted with us over several months. We covered the entire geographic market for homes in our price range and desired location! Even when we at one point changed our mind about buying a home, she was very patient and professional and did not pressure us into continuing because of her time investment.</p><p>Eventually we found a home that fit our requirements, and through Izabela we found a team to renovate the home. In the meantime, she listed our current home and had ten prospective buyers the first day it hit the market without so much as a "for sale" sign up! Her marketing efforts were spectacular; the NY Times even called wanting to feature our home in their real estate section because they liked the online pictures so much.</p><p>She was upfront, honest and respectful throughout the negotiation process as we worked to sell our home. She had referrals for repair technicians where tweaks were needed and made sure the jobs were done properly. In the end, our house is being sold for more than we purchased it thanks to her hard work and its location and condition.</p><p>My husband and I felt very comfortable with Izabela's knowledge of the luxury home market, new construction home market and her geographic knowledge of the City of Chicago. We really enjoyed her client service and personal warmth and would highly recommend her.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Mount Prospect | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>I give my highest recommendation to Izabela as a realtor. Her deep knowledge of real estate is clear and I really value her insights and honest advice that she gives.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold |  | </p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was the sellers agent on the house that we bought. She made herself available for showings even when we did not give much advanced notice. She helped us through the inevitable "issues" that arise in the process of home buying and got back to us in a timely manner. Even after we had closed, &nbsp;we had a major issue with the house on A Sunday and we did not know who to call. We called her and she got someone over to help us right away.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>It was a pleasure working with Izabela every step of the way. She is knowledgeable and shares information in a way that the client can understand. She keeps in contact with the client and is quick to return calls and answer any questions. I would recommend her for first time buyers as well as for &nbsp;anyone else looking to buy or sell. It is reassuring to have Izabela on your corner, she will have your best interest in mind!!</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Montclare | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>The best Realtor ever. Iza has a personal approach and she is always following up. She was never tired with difficult situations. She is also very knowledgeable about her work. &nbsp;She loves what she is doing.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Des Plaines | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela Sloma is very responsive- quick to return email and phone calls and super fast at answering any questions. She really understands the local neighborhoods and knows what is important to each customer- so she knows the best apartments to show you (or how to get you the best price for your &nbsp;house if you're selling). Highly recommend!!</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase |  | </p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_3933">Izabela is a realtor who will go above and beyond to help her clients. &nbsp;She spent countless hours with us helping us find our home. Even during the moments when we wanted to give up searching, there she was with another list of homes for us to see. Even after our bid had been accepted and we were</span> <span id="yui_3_18_1_1_1503415724993_3931">&nbsp;trudging through the home-buying process, she was there for us. If we had a question, she answered it. &nbsp;If we had a concern, she addressed it. Basically, if you're wanting to buy a home, Izabela will make sure it happens for you. I'd recommend her in a heartbeat, no hesitation.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Logan Square | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was a GREAT help and we highly recommend her. &nbsp;She has been doing this for a long time &amp; has a lot of resources at her disposal that can help in the process, especially for first time buyers. &nbsp;She pointed out a lot of little things that we likely would have missed on our own. &nbsp;She was &nbsp;always VERY quick to respond, a major plus.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Old Irving Park | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is amazing, caring, trustworthy and extremely dedicated and very easy to talk to. She is super responsive, she will return my email, text or phone call immediately. &nbsp; Always keeping track and sending updates of new houses on the market. She doesn't pressure me to buy and if I don't like the <span id="yui_3_18_1_1_1503415724993_3864">&nbsp;homes I see, she says, " Don't worry we will keep looking until you find something no matter how long it takes.". &nbsp;That's one of the important qualities I like about Izabela, but the most important quality I have found in Izabela is her honesty. I completely trust her. When I don't understand something she will explain it over and over until I do. She looks out for me. She doesn't mess around and nobody can BS her when it comes to the quality of work that has been done to a home. She's on top of everything. I would recommend her in a heartbeat!!! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p><span>I really, really appreciate everything she has done for me.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase and Sold | Schaumburg | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_3850">Izabela is a wonderful agent. &nbsp;Quick responses to inquiries, extensive knowledge, and very flexible with her time. &nbsp;It took us a long time to find the right house for our budget, but I never felt pressured into a decision. &nbsp;It was apparent from the beginning that she was truly interested in what</span>&nbsp; was best for our family, and not in a quick sale. &nbsp;Highly recommended.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Lakeview | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is a real pro. &nbsp;She knows Chicago neighborhoods very well and helped us make a good decision. &nbsp;She is very responsive, no pressure, and will negotiate well on your behalf. &nbsp;This is our 13th house and I would rate her in the top 2 of all the agents I have used.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Gold Coast | Condo </p>
+                            <hr class="colored">
+                            <p></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I moved to Chicago from Tennessee and needed to understand the area of the city that most aligned with my lifestyle and real-estate goals...enter Izabela! &nbsp;Her knowledge of the city and it's local attractions made my home buying process simple. &nbsp;Izabela was &nbsp;available to fit my schedule which included Saturday and Sunday in some instances. &nbsp;She took me to see multiple properties and allowed me the opportunity to walk-through and experience the property without distractions. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><p>Izabela's business acumen is expert when we decided to narrow the search to a couple of properties at the top of my list. &nbsp;Her research of the area and expertise knowledge of proximity of key elements that I wanted in the city made the decision a very easy one. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Her network connections are remarkable! &nbsp;When my mortgage lender delayed our closing, Izabela had me in contact with another lender within 24 hours and the process took less than a week to finalize. &nbsp;At closing, I met her support team and they are all as incredible as her! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>Top notch experience and I gladly refer her whenever I can to friends and colleagues looking to make a move. &nbsp;I will continue to do business with her as long as I am in Illinois! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>Thank you, Izabela!&nbsp;</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | Old Irving Park | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is one of the best agents I have worked with. &nbsp;Very friendly and one of the most kind people I have met. &nbsp;She has great knowledge in what she does and I would highly recommend Izabela as your Agent. &nbsp;" Best Agent in Chicago! &nbsp;"</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase and Sold | Logan Square | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is the best agent I ever worked with. The best to buy with and the best to sell with. Honest and dedicated, very trustful and respectful in the local real estate community.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Fulton River District | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>We searched for houses for nearly 6 months. &nbsp;Izabela had good insight into things, and displayed great professionalism and patience. &nbsp;She made us feel confident and comfortable throughout the whole search process. &nbsp;She knew the city very well. &nbsp;I will totally recommend her to my friends.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | The Loop | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was professional and easy to deal with. &nbsp;High energy, no-nonsense, practical, and responsive in all ways. &nbsp;She would respond to calls or emails within minutes. &nbsp;She brought multiple offers to us for consideration. &nbsp;She arranged reliable contractors to help fix some minor items prior to &nbsp;listing. &nbsp;She utilized her own marketing funds rather than apply an "add charge" to her commission.I enjoyed working with her and can highly recommend her services.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase and Sale | Hermosa | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_3715">Izabela Is hands down the best person for real estate in Chicago. &nbsp;She initially helped us purchase our home 5 years ago and since she was so great then we knew she would be great at selling it as well. &nbsp;After she came to walk thru our house and make suggestions for upgrade and repairs we had the</span> <span id="yui_3_18_1_1_1503415724993_3714">&nbsp;house listed within 2 weeks and sold it in the first week. &nbsp;We had a little negotiation, but not once did she pressure us about lowering the price to accommodate a buyer. We will be looking for more real estate soon and she is the only person we plan to use. &nbsp;I highly recommend her to anyone looking for an agent.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | West Town | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Highly recommended. Izabela is a great resource for navigating the real estate market. Her extensive industry experience, insight, relationships, and professionalism are top tier. Whether purchasing or selling a home, Izabela takes care of your investment.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | West Town | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p><span id="yui_3_18_1_1_1503415724993_3593">Izabela is a catch! She has been our real estate broker for years and we couldn't be more impressed with her hard work. She helps us purchase a Lot, next we build on it, and then it's her job to help sell it. She is smart, intelligent, and extremely professional. All transactions feel like a breeze</span>&nbsp; <span id="yui_3_18_1_1_1503415724993_3597">&nbsp;with her, everything always goes smooth and is a success in the end. Working with her has been a pleasure and we look forward to future projects together. Hands down, 100% recommend Iza for all your real estate purchases.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | West Town | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela was a pleasure to work with on purchasing my new home. &nbsp; She is very responsive, knowledgeable and pleasant to work with. &nbsp; She has strong knowledge of the value of the properties she represents and showcases the features and benefits of the property she sold me. I would recommend Izabela &nbsp;s<span id="yui_3_18_1_1_1503415724993_3585">trongly for buying and selling your home.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Old Town | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>From the day I met Izabela until the day I closed, she was 100% "in my camp" and helping me find the perfect place that met all of my needs and criteria. She was right there with me through negotiation, closing and even went out of her way to let a designer in to take measurements while I was out &nbsp;<span id="yui_3_18_1_1_1503415724993_3578">&nbsp;of town. At this point, I can't imagine working with anyone else on the next purchase and I highly recommend Izabela to anyone in the market for Chicago real estate.</span></p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase and Sale | West Town | Single Family Home</p>
+                            <hr class="colored">
+                            <p></p><p>Very knowledgable, helpful and professional. Superb negotion skills and a skilled understanding of a current market. Made a purchase and a sale of my home an easy process.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | West Town | Single Family</p>
+                            <hr class="colored">
+                            <p></p><p>I have worked with Izabela on two occasion and during each, she went above and beyond. The first transaction was buying a home. Izabela knew every detail about every neighborhood which aided in the decision making process. Additionally, she provided resources and connections to guide us through the &nbsp; sale and make the transaction as smooth as possible. The second transaction she helped with was selling our house. On Friday, we told Izabela that we wanted to sell our house. On Monday, it was sold for the asking price! She is a fantastic resource and a wonderful agent with superior market knowledge. I HIGHLY recommend her for buying or selling your next home.&nbsp;</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Sold | West Town | Single Family</p>
+                            <hr class="colored">
+                            <p></p><p>Highly recommended. Izabela is a great resource for navigating the real estate market. Her extensive industry experience, insight, relationships, and professionalism are top tier. Whether purchasing or selling a home, Izabela takes care of your investment.</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 770px;"><div class="item mb-4">
+                            <p class="lead">Purchase | Fulton River District | Condo</p>
+                            <hr class="colored">
+                            <p></p><p>Izabela is the best! I’d highly recommend her. She was fabulous to work with and took me all over Chicago (in the snow) for weekends and weeknights until I found my condo - that I’m obsessed with!</p><p></p>
+                            <hr class="colored">
+                            <div class="testimonial-author">
+                                <p class="small"></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div></div></div></div>
+
+
+
+                    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>.listing.col-lg-6 img{height:300px;}</style>
+
+        <!-- Recent Transactions -->
+    <section class="page-section transactions bg-faded text-center">
+        <div class="container wow fadeIN" style="visibility: hidden; animation-name: none;">
+            <h2>Recent Transactions</h2>
+            <hr class="dark">
+            <div class="row mb-3">
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/d969d1f0-8351-11e7-a4cc-0fd23684079c-4106 Narragansett.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 4106 N Narragansett Ave Unit 207">
+                    <h4 class="text-center"><a href="/listings/4106-n-narragansett-ave-unit-207">4106 N Narragansett Ave Unit 207 </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $149,900</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/179909d0-85c0-11e7-b091-25f6cf0f0c37-Default Listing@2x-100.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 2419 N Artesian Ave">
+                    <h4 class="text-center"><a href="/listings/2419-n-artesian-ave">2419 N Artesian Ave </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $1,049,900</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/179909d0-85c0-11e7-b091-25f6cf0f0c37-Default Listing@2x-100.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 2108 N Bingham">
+                    <h4 class="text-center"><a href="/listings/2108-n-bingham">2108 N Bingham </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $949,000</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/e1741340-82bd-11e7-a4cc-0fd23684079c-720 Willard 2 .jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 720 N Willard #2">
+                    <h4 class="text-center"><a href="/listings/720-n-willard-2">720 N Willard #2 </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"></h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/0f2d2e60-7d7e-11e7-a003-f3ccaa646682-Unknown-6.jpeg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 3019 N Allen Avenue">
+                    <h4 class="text-center"><a href="/listings/3019-n-allen-avenue">3019 N Allen Avenue </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $541,000</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/d33b3ee0-82bb-11e7-9c2d-a7327b604861-1911 W Erie.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 1911 W Eerie Street">
+                    <h4 class="text-center"><a href="/listings/1911-w-eerie-street">1911 W Eerie Street </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $1.25 M</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/1999e800-72ea-11e7-8622-cdb2269d4734-Unknown-4.jpeg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 2208 W Ohio Street">
+                    <h4 class="text-center"><a href="/listings/2208-w-ohio-street">2208 W Ohio Street </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $1.4 M</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/b8b5e380-82bc-11e7-975e-e3b9252139e3-2558 Cortland .jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 2558 W Cortland Street">
+                    <h4 class="text-center"><a href="/listings/2558-w-cortland-street">2558 W Cortland Street </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $995,000</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/3140ce50-82bd-11e7-9c2d-a7327b604861-2735 Cortland.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 2735 W Cortland Street">
+                    <h4 class="text-center"><a href="/listings/2735-w-cortland-street">2735 W Cortland Street </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $830,000</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/a82757f0-82bd-11e7-975e-e3b9252139e3-1816 Division.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 1816 Division St">
+                    <h4 class="text-center"><a href="/listings/1816-division-st">1816 Division St </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $2800/Month</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/e8ec5af0-6e37-11e7-b171-9b085e2b736b-0005-2.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 720 N Willard #1">
+                    <h4 class="text-center"><a href="/listings/720-n-willard-1">720 N Willard #1 </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $699,900</strong></span> </h5>
+                </div>
+                <div class="col-lg-6 listing">
+                    <img src="https://cosmicjs.imgix.net/62478a20-6da0-11e7-bfce-6bb67f458eaf-0003-2.jpg?w=600&amp;fit=crop&amp;crop=entropy&amp;auto=format" alt="Photo of 1503 N Park Ave">
+                    <h4 class="text-center"><a href="/listings/1503-n-park-ave">1503 N Park Ave </a></h4>
+                    <h5 class="text-center" style="margin-bottom:1.5rem;margin-top:1rem;"> <span class="price" style="text-transform:capitalize;">Selling Price:<strong> $2.9 M</strong></span> </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	</main>
+    
+    <!-- Footer -->
+    <footer class="footer" style="background-image: url('https://cosmicjs.com/uploads/cf24f630-6e29-11e7-b262-b55cd8567838-bg-footer.jpg?w=1500&amp;fit=crop&amp;crop=entropy&amp;auto=format,enhance')">
+        <div class="text-center">
+            <img class="img-fluid logo" src="https://cosmicjs.com/uploads/1110fe00-874c-11e7-8b86-7db4f533bdd3-Full-Text-Logo.svg" alt="">
+        </div>
+            <div class="row footer-social text-center">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li class="header">
+                          <h6 style="font-weight:bold;font-family:'freight-sans-pro',helvetica,sans-serif; margin:25px 0;">Connect With Us</h6>                          
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="tel:773-317-0414"><i class="fa fa-phone fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://facebook.com/izabelaslomarealestate"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://twitter.com/slomarealestate"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://linkedin.com/in/izabelasloma"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://instagram.com/slomarealestate"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://plus.google.com/u/1/+IzabelaSloma"><i class="fa fa-google-plus fa-fw fa-2x"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.pinterest.com/slomarealestate"><i class="fa fa-pinterest fa-fw fa-2x"></i></a>
+                        </li>
+
+
+                    </ul>
+                    <p class="copyright text-center" style="font-weight:bold;font-family:'freight-sans-pro',helvetica,sans-serif; margin:25px 0;">©&nbsp;&nbsp;2017 Sloma Real Estate Group</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <img src="https://cosmicjs.com/uploads/3f368ca0-6e2e-11e7-b262-b55cd8567838-jamesonsothebys.png" alt="" width="250px">
+                        </li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <img src="https://cosmicjs.com/uploads/9bc2b7f0-6e2e-11e7-b262-b55cd8567838-equal.png" alt="" width="50px">
+                        </li>
+                        <li class="list-inline-item" style="width:25px;"></li>
+                        <li class="list-inline-item">
+                            <img src="https://cosmicjs.com/uploads/2e3cd8a0-6e2e-11e7-bfce-6bb67f458eaf-realtor.png" alt="" width="50px">
+                        </li>
+                    </ul>
+                    <p class="text-center self-center col-md-6 offset-md-3 offset-sm-2 col-sm-8 offset-xs-1 col-xs-10 mt-2" style="font-size:12px;">
+                        Sotheby’s International Realty and the Sotheby’s International Realty logo are registered (or unregistered) service marks used with permission. Sotheby’s International Realty Affiliates LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each Office Is Independently Owned And Operated. If your property is listed with a real estate broker, please disregard. It is not our intention to solicit the offerings of other real estate brokers. We are happy to work with them and cooperate fully. Although information, including measurements, has been obtained from sources deemed reliable, accuracy is not guaranteed.
+                    </p>
+                </div>
+            </div>
+        
+    </footer>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script async="" defer="" src="/vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="/vendor/vide/jquery.vide.min.js"></script>
+    <script async="" defer="" src="/vendor/wowjs/wow.min.js"></script>
+    
+    <!-- Contact form JavaScript -->
+    <script async="" defer="" src="/js/contact_me.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts for this theme -->
+    <script async="" defer="" src="/js/vitality.js"></script>
+
+
+    </script>
+
+
+
+
+</body></html>
